@@ -1,0 +1,17 @@
+{
+    "al.assemblyProbingPaths": [
+        "./.netpackages",
+        "C:\\Windows\\assembly"
+    ],
+    "CRS.WinServerInstance": "BC",
+    "CRS.ObjectNameSuffix": "EHO",
+    "alObjectDesigner.singleObjectPerFile": true,
+    "CRS.RemoveSuffixFromFilename": true,
+    "CRS.AlSubFolderName": "None",
+    "alNavigator.ignoreALPrefix": "EHO",
+    "alNavigator.ignoreALSuffix": "EHO",
+    "ALTB.UseOldFileNamingConventions": false,
+    "alVarHelper.ignoreALPrefix": "EHO",
+    "alVarHelper.ignoreALSuffix": "EHO",
+    "alOutline.autoGenerateFiles": true
+}

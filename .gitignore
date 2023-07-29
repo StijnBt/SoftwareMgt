@@ -1,0 +1,6 @@
+*.app
+.vscode/rad.json
+.vscode/.alcache/*
+powershell/UpdateLicence.ps1
+test/AzureDevOpsRestAPI.rest
+.vscode/.altemplates/*

@@ -1,0 +1,53 @@
+
+#@organization = 
+@organization = Cronus
+#@project = Branching Demo
+@project = Business Central Product Extensions
+@pat = sdsdsdsds
+
+@patBase64 = 
+
+@repo = Process-Flow
+
+### List Projects
+GET https://dev.azure.com/{{organization}}/_apis/projects?api-version=6.0
+Authorization: Basic {{patBase64}}
+
+### List Branches
+GET https://dev.azure.com/{{organization}}/{{project}}/_apis/git/repositories/{{repo}}/refs?api-version=6.0
+Authorization: Basic {{patBase64}}
+
+
+### List Branches with filter
+GET https://dev.azure.com/{{organization}}/{{project}}/_apis/git/repositories/{{repo}}/refs?filter=heads&api-version=6.0
+Authorization: Basic {{patBase64}}
+
+
+
+### List Git Items all
+GET https://dev.azure.com/{{organization}}/{{project}}/_apis/git/repositories/{{repo}}/items?scopePath=/&versionDescriptor.version=20200513.0&recursionLevel=Full&api-version=6.0
+Authorization: Basic {{patBase64}}
+
+### List Git Items Batch
+POST https://dev.azure.com/{{organization}}/{{project}}/_apis/git/repositories/{{repo}}/itemsbatch?api-version=6.0
+Authorization: Basic {{patBase64}}
+Content-Type: application/json
+
+{ "itemDescriptors": [ { "path": "/", "recursionLevel": "full", "versionType": "branch", "version": "20200513.0"} ] } 
+
+
+### Download Git Item
+GET https://dev.azure.com/{{organization}}/{{project}}/_apis/git/repositories/{{repo}}/items?scopePath=/Process-Flow-App-BC16/Flow_16.0.20201123.0.app&api-version=6.0
+#GET https://dev.azure.com/{{organization}}/{{project}}/_apis/git/repositories/{{repo}}/items?scopePath=/Process-Flow-App-BC16/Flow_16.0.20201123.0.app&download=true&api-version=6.0
+Authorization: Basic {{patBase64}}
+Content-Type: application/octet-stream
+
+### Code Search
+POST https://almsearch.dev.azure.com/{{organization}}/{{project}}/_apis/search/codesearchresults?api-version=5.1
+
+Authorization: Basic {{patBase64}}
+Content-Type: application/json
+
+{
+  "searchText": "release",
+}

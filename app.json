@@ -1,0 +1,28 @@
+{
+  "id": "64b12d3b-e198-44ae-8ba2-20a82c0b8a4f",
+  "name": "Software Mgt",
+  "publisher": "",
+  "version": "1.0.0.1",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "https://github.com/StijnBt",
+  "EULA": "https://github.com/StijnBt",
+  "help": "https://github.com/StijnBt",
+  "url": "https://github.com/StijnBt",
+  "logo": "./media/EventHorizonLogo.png",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "20.0.0.0",
+  "application": "20².0.0.0",
+  "idRanges": [
+    {
+      "from": 50900,
+      "to": 50999
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://github.com/StijnBt",
+  "resourceExposurePolicy": {"allowDebugging": true,"allowDownloadingSource": true,"includeSourceInSymbolFile": true},
+  "features": ["TranslationFile"],
+  "target": "Cloud",
+  "runtime": "9.0"
+}
